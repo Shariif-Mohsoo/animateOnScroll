@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body
+{
+
+    box-sizing: border-box;
+    background:linear-gradient(to right bottom,red,darkred) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+h1
+{
+    display: inline-block;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: white;
+    transition: all .3s;
+}
+h1:hover
+{
+    filter: drop-shadow(.5rem .5rem 4rem white);
+    transform: skewY(-2deg) skewX(7deg);
+}
+html
+{
+    font-size: 62.5%;
+}
+.box
+{
+    background-color:green;
+    display: flex;
+    margin: 2rem;
+    /* padding: 4rem 6rem; */
+    height: 20rem;
+    width: 40rem;
+    border-radius: 2rem;
+    transform: translateX(400%);
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease;
+}
+.box:nth-of-type(even)
+{
+    transform: translateX(-400%);
+}
+.box.show
+{
+    transform: translateX(0);
+}
+.box h2
+{
+    font-size: 3rem;
+}
